@@ -38,3 +38,12 @@ gem 'jbuilder', '~> 1.0.1'
 
 # To use debugger
 # gem 'debugger'
+
+group :test, :development do
+  gem 'rspec-rails', "2.12.2"
+end
+
+group :test do
+  gem 'capybara', "2.0.2"
+end
+
