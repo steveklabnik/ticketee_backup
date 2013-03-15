@@ -4,4 +4,5 @@ class Ticket < ActiveRecord::Base
                           length: { minimum: 10 }
 
   belongs_to :project
+  belongs_to :user
 end
