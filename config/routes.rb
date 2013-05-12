@@ -9,6 +9,10 @@ Ticketee::Application.routes.draw do
     resources :tickets
   end
 
+  namespace :admin do
+    resources :users
+  end
+
   resources :users
   
   # The priority is based upon order of creation: first created -> highest priority.
