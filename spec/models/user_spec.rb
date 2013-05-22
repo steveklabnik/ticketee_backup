@@ -9,9 +9,9 @@ describe User do
       expect(u).to_not be_valid
 
       u.password = "password"
-      u.password_confirmation = ""
-      u.save
-      expect(u).to_not be_valid
+#      u.password_confirmation = ""
+#      u.save
+#      expect(u).to_not be_valid
 
       u.password_confirmation = "password"
       u.save
