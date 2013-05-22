@@ -39,7 +39,7 @@ gem 'cancan', '1.6.9'
 # gem 'debugger'
 
 group :test, :development do
-  gem 'rspec-rails', "2.12.2"
+  gem 'rspec-rails', "2.13.2"
 end
 
 group :test do
