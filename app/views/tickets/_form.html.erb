@@ -19,5 +19,9 @@
     <%= f.label :description %><br>
     <%= f.text_area :description %>
   </p>
+  <p>
+    <%= f.label :asset, "File" %><br>
+    <%= f.file_field :asset %>
+  </p>
   <%= f.submit %>
 <% end %>

@@ -12,4 +12,17 @@
   <% end %>
 
   <%= simple_format(@ticket.description) %>
+
+  <% if @ticket.asset.present? %>
+    <h3>Attached File</h3>
+    <div class="asset">
+      <p>
+        <%= link_to File.basename(@ticket.asset.path),
+                     @ticket.asset.url %>
+      </p>
+      <p><small><%= number_to_human_size(@ticket.asset.size) %>
+       </small></p>
+    </div>
+  <% end %>
+
 </div>

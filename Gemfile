@@ -48,3 +48,4 @@ group :test do
   gem 'factory_girl', "4.2.0"
 end
 
+gem 'carrierwave', "0.8.0"
