@@ -40,6 +40,8 @@ gem 'cancan', '1.6.9'
 
 group :test, :development do
   gem 'rspec-rails', "2.13.2"
+  gem 'pry'
+  gem 'pry-debugger'
 end
 
 group :test do
