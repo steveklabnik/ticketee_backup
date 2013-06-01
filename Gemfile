@@ -49,3 +49,5 @@ group :test do
 end
 
 gem 'carrierwave', "0.8.0"
+
+gem 'database_cleaner', '1.0.1'
