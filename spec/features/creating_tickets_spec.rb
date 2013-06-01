@@ -31,10 +31,10 @@ feature "Creating Tickets" do
     fill_in "Title", with: "Add documentation for blink tag"
     fill_in "Description", with: "The blink tag has a speed attribute"
 
-    attach_file "File #1", "spec/fixtures/speed.txt"
+    attach_file "File #1", Rails.root.join("spec/fixtures/speed.txt")
 
     click_link "Add another file"
-    attach_file "File #2", "spec/fixtures/spin.txt"
+    attach_file "File #2", Rails.root.join("spec/fixtures/spin.txt")
 
     click_button "Create Ticket"
 
