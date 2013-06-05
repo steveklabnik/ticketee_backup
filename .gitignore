@@ -16,3 +16,5 @@
 /tmp
 
 public/uploads
+
+.DS_Store
