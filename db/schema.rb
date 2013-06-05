@@ -56,7 +56,6 @@ ActiveRecord::Schema.define(version: 20130531100221) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "admin",           default: false
-    t.string   "asset"
   end
 
 end

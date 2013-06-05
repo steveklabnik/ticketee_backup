@@ -13,7 +13,9 @@ class Admin::UsersController < Admin::BaseController
   end
 
   def create
-    @user = User.new(user_params)
+    params = user_params.dup
+    params[:password_confirmation] = params[:password]
+    @user = User.new(params)
 
     if @user.save
       flash[:notice] = "User has been created."
